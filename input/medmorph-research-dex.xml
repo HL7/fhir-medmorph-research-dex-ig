@@ -37,6 +37,16 @@
   </dependsOn>
  
   <definition>
+  
+  <resource>
+      <reference>
+        <reference value="Patient/1"/>
+      </reference>
+      <name value="Patient 1 - Example"/>
+      <description value="An example showing a Patient"/>
+      <exampleBoolean value="true"/>
+   </resource>
+  
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -93,6 +103,10 @@
     <parameter>
       <code value="path-liquid"/>
       <value value="templates\liquid"/>
+    </parameter>
+    <parameter>
+      <code value="path-expansion-params"/>
+      <value value="terminology-settings.json"/>
     </parameter>
     <parameter>
       <code value="shownav"/>
