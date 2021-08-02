@@ -54,13 +54,13 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
+        <title value="MedMorph Research Content IG Home"/>
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="background.html"/>
-        <title value="Background"/>
-        <generation value="html"/>
+        <nameUrl value="usecases.html"/>
+        <title value="Use Cases"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="spec.html"/>
