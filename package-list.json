@@ -2,7 +2,7 @@
  "package-id" : "hl7.fhir.us.medmorph-research-dex",
  "title" : "Making EHR Data MOre available for Research and Public Health (MedMorph) Research Content IG", 
  "canonical" : "http://hl7.org/fhir/us/medmorph-research-dex", 
- "introduction" : "The MedMorph Research Content IG enables research organizations to access data from EHRs for research purposes leverage the MedMorph Reference Architecture.",
+ "introduction" : "The MedMorph Research Data Exchange Content IG enables research organizations to access data from EHRs for research purposes leverage the MedMorph Reference Architecture.",
  "category" : "Public Health and Research",
  "list" : [
  {
@@ -13,6 +13,15 @@
   "current" : "true",
   "sequence" : "STU 1",
   "fhirversion" : "4.1.0"
+ },
+ {
+  "version" : "0.1.0",  
+  "date" : "2022-01-01", 
+  "desc" : "STU 1 Ballot (Jan 2022 Ballot)",   
+  "path" : "http://hl7.org/fhir/us/medmorph-research-dex/2022Jan",  
+  "status" : "ballot",   
+  "sequence" : "STU 1",
+  "fhirversion" : "4.0.1"
  }
  ]
 }

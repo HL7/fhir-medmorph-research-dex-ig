@@ -2,3 +2,14 @@
 
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
+
+# These errors related to references to the Bulk Data Access IG give broken link errors, however they are false positives and the links are valid.
+# Upon discussion with Grahame, it is understood that these errors cannot be resolved in the IG publisher for now.
+
+The link 'http://hl7.org/fhir/uv/bulkdata/STU1/authorization/index.html#advertising-server-conformance-with-smart-backend-services' for "Bulk Data Access IG Authorization Section" cannot be resolved
+The link 'http://hl7.org/fhir/uv/bulkdata/STU1/authorization/index.html' for "Bulk Data Access IG Authorization Section" cannot be resolved
+The link 'http://hl7.org/fhir/uv/bulkdata/STU1/authorization/index.html#registering-a-smart-backend-service-communicating-public-keys' for "Bulk Data Access IG Authorization Section" cannot be resolved
+The link 'http://hl7.org/fhir/uv/bulkdata/STU1/authorization/index.html#obtaining-an-access-token' for "Bulk Data Access IG Authorization Section" cannot be resolved
+The link 'http://hl7.org/fhir/uv/bulkdata/STU1/export/index.html#endpoint---group-of-patients' for "Bulk Data Access Group export" cannot be resolved
+Canonical URL 'http://hl7.org/fhir/uv/bulkdata/OperationDefinition-group-export.html' does not resolve
+

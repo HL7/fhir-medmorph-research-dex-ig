@@ -5,8 +5,8 @@
   <url value="http://hl7.org/fhir/us/medmorph-research-dex/ImplementationGuide/medmorph-research-dex"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.1.0"/>
-  <name value="MedMorphResearchContentIG"/>
-  <title value="MedMorph Research Content IG"/>
+  <name value="MedMorphResearchDataExchangeContentIG"/>
+  <title value="MedMorph Research Data Exchange Content IG"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 International - Public Health Work Group"/>
@@ -30,20 +30,79 @@
   <license value="CC0-1.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <fhirVersion value="4.0.1"/>
+  
   <dependsOn id="uscoreR4">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <packageId value="hl7.fhir.us.core"/>
-    <version value="3.1.0"/>
+    <version value="3.1.1"/>
+  </dependsOn>
+  
+   <dependsOn id="bulkIg">
+    <uri value="http://hl7.org/fhir/uv/bulkdata/ImplementationGuide/hl7.fhir.uv.bulkdata"/>
+    <packageId value="hl7.fhir.uv.bulkdata"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  
+  <dependsOn id="medmorphIg">
+    <uri value="http://hl7.org/fhir/us/medmorph/ImplementationGuide/hl7.fhir.us.medmorph"/>
+    <packageId value="hl7.fhir.us.medmorph"/>
+    <version value="current"/>
+  </dependsOn>
+  
+  <dependsOn id="cdmhIg">
+    <uri value="http://hl7.org/fhir/us/cdmh/ImplementationGuide/hl7.fhir.us.cdmh"/>
+    <packageId value="hl7.fhir.us.cdmh"/>
+    <version value="current"/>
   </dependsOn>
  
   <definition>
   
   <resource>
       <reference>
+        <reference value="PlanDefinition/plandefinition-example"/>
+      </reference>
+      <name value="Research Data Extraction Knowledge Artifact Example"/>
+      <description value="An example showing a Knowledge Artifact Example for Research Data Extraction"/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="Group/group-example-research"/>
+      </reference>
+      <name value="Research Participants Group Example"/>
+      <description value="An example showing a Group resource for Research Data Extraction"/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
         <reference value="Patient/1"/>
       </reference>
-      <name value="Patient 1 - Example"/>
-      <description value="An example showing a Patient"/>
+      <name value="Patient Example"/>
+      <description value="An example showing a Patient for Research Data Extraction"/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="Practitioner/1"/>
+      </reference>
+      <name value="Practitioner Example"/>
+      <description value="An example showing a Practitioner for Research Data Extraction"/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="Organization/example-healthcare-org"/>
+      </reference>
+      <name value="Organization Example"/>
+      <description value="An example showing an Organization for Research Data Extraction"/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="Endpoint/example-healthcare-endpoint"/>
+      </reference>
+      <name value="Endpoint Example"/>
+      <description value="An example showing an Endpoint for Research Data Extraction"/>
       <exampleBoolean value="true"/>
    </resource>
   
