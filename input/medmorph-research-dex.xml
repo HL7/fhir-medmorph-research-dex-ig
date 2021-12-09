@@ -46,7 +46,7 @@
   <dependsOn id="medmorphIg">
     <uri value="http://hl7.org/fhir/us/medmorph/ImplementationGuide/hl7.fhir.us.medmorph"/>
     <packageId value="hl7.fhir.us.medmorph"/>
-    <version value="current"/>
+    <version value="0.2.0"/>
   </dependsOn>
   
   <dependsOn id="cdmhIg">
