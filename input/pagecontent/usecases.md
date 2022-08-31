@@ -1,15 +1,15 @@
 ### Business Need and User Stories
 The section identifies the business needs and specific user stories outlining the research data exchange needs.
  
-* **User Story #1:** As a research network administrator, there is a need to on-board research data partners to join the research network and contribute data that can be used for research. The data partners extract, transform and load the data from data sources such as EHRs, HIEs, Other data respositories. The current processes used to extract, transform, load the data and then contribute the data involve many non-standardized mechanisms (e.g SFTP, Excel Files, Stored procedures), different structures (formats) and different semantics. As a result of these non-standardized processes, the length of time to on-board a data partner varies from weeks to months. These processes (extraction, transformation and loading) when standardized will expedite on-boarding processes and deliver better quality data at a lower cost. 
+* **User Story #1:** As a research network administrator, there is a need to on-board research data partners to join the research network and contribute data that can be used for research. The data partners extract, transform and load (ETL) the data from data sources such as EHRs, HIEs, or other data respositories. The current processes used to extract, transform, load the data and then contribute the data involve many non-standardized mechanisms (e.g., SFTP, Excel Files, stored procedures), different structures (e.g., formats), and different semantics. As a result of these non-standardized processes, the length of time to on-board a data partner varies from weeks to months. These processes (e.g., ETL) when standardized will expedite on-boarding processes and deliver better quality data at a lower cost. 
 
-* **User Story #2:** Once a data partner joins a research network and contributes data, a researcher should be able to perform queries to filter specific data sets and analyze the data to improve treatments and outcomes. Currently researchers are able to query data marts on a limited basis because of the variations in the data models (e.g., PCORnet CDM, i2b2, OMOP, FHIR Resources) and the technologies (e.g., Microsoft SQL, Postgres SQL, SAS, etc.)  used to host the data mart. Standardizing these data access mechanisms will help overcome the hurdles faced by researchers in accessing data from data partners and EHRs. 
+* **User Story #2: (future consideration)** Once a data partner joins a research network and contributes data, a researcher should be able to perform queries to filter specific data sets and analyze the data to improve treatments and outcomes. Currently researchers are able to query data marts on a limited basis because of the variations in the data models (e.g., PCORnet CDM, i2b2, OMOP, FHIR Resources) and the technologies (e.g., Microsoft SQL, Postgres SQL, SAS, etc.)  used to host the data mart. Standardizing these data access mechanisms will help overcome the hurdles faced by researchers in accessing data from data partners and EHRs. **NOTE:** User Story #2 is out of scope for this version of the IG, it is being included only as a potential use case that could be expanded on in the future.
 
-### Focus of the MedMorph Research Content IG 
+### Focus of the MedMorph Research Data Exchange Content IG 
 
-The focus of the MedMorph Research Content IG is User Story #1. This is based on extensive discussions with the PCORnet Front Door team, the MedMorph RA WG and the CDC MedMorph team. The reasons for choosing User Story #1 is as follows
+The focus of the MedMorph Research Data Exchange Content IG is User Story #1. This is based on extensive discussions with the PCORnet Front Door team, the MedMorph Reference Architecture (RA) WG, and the CDC MedMorph team. The reasons for choosing User Story #1 is as follows:
 
-* Reduces the number of custom mappings between EHRs and the destination research data models (i2b2, PCORnet, Sentinel and OMOP) to only 4 mappings instead of the large number of mappings (potentially a mapping used at every site for every EHR) currently in use.
+* Reduces the number of custom mappings between data sources and the destination research data models (e.g., i2b2, PCORnet, Sentinel and OMOP) to only 4 mappings instead of the large number of mappings (e.g., potentially a mapping used at every site for every data source) currently in use.
 
 The current state is as shown in the Figure below:
 
@@ -17,7 +17,7 @@ The current state is as shown in the Figure below:
 
 <br/>
 
-The usage of FHIR during the on-boarding process and expected efficiencies are documented below
+The usage of FHIR during the on-boarding process and expected efficiencies are documented below:
 
 
 {% include img.html img="DataPartnerOnboardingFuture.png" caption="Figure 2.2 - DataPartner On-boarding Using FHIR" %}
@@ -33,16 +33,16 @@ Figure 2.3 below shows the research abstract model to onboard a data partner who
 
 <br>
 
-As shown in Figure 2.3 above, the Backend Service App will extract data from an EHR for one or more patients and use the Data/Trust Services to perform translation, masking and populate the data mart. In the above diagram the data mart exists within the health care organization. The Data Mart and the Backend Service App could reside outside the health care organization as shown in Figure 2.4 below. 
+As shown in Figure 2.3 above, the Health Data Exchange App (HDEA), MedMorph's backend services app, will extract data from a Data Source for one or more patients and use the Trust Services to perform translation, masking, and populating the data mart. In the above diagram the Data Mart exists within the health care organization. The Data Mart and the HDEA could reside outside the health care organization as shown in Figure 2.4 below. 
 
-{% include img.html img="OnboardingExternalDataPartner.svg" caption="Figure 2.4 - Populating an Externally Hosted Data Mart from an EHR" %}
+{% include img.html img="OnboardingExternalDataPartner.svg" caption="Figure 2.4 - Populating an Externally Hosted Data Mart from a Data Source" %}
 
 <br>
 
 
 ### MedMorph Research Actors and Definitions
 
-This section defines the Actors and Systems that interact within the MedMorph Reference Architecture to realize the capabilities of the use cases listed above.
+This section defines the Actors and Systems that interact within the MedMorph RA to realize the capabilities of the research data exchange use case listed above.
 
 1. __Electronic Health Record (EHR)__:  A system used in care delivery for patients and that captures and stores data about patients and makes the information available instantly and securely to authorized users. While an EHR does contain the medical and treatment histories of patients, an EHR system is built to go beyond standard clinical data collected in a provider’s provision of care location and can be inclusive of a broader view of a patient’s care. EHRs are a vital part of health IT and can:
 
