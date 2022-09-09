@@ -138,7 +138,7 @@ This section outlines how the SMART on FHIR Backend Services Authorization from 
 
 * The HDEA **SHALL** allow the healthcare organization to activate/deactivate a specific Knowledge Artifact. Activation indicates applying the Knowledge Artifact and deactivation indicates not applying the Knowledge Artifact for events occurring within the healthcare organization.
 
-* The HDEA **SHALL** implement FhirPath expression processing to process the MedMorph Research Data Exchange Knowledge Artifact actions.
+* The HDEA **SHALL** implement FHIRPath expression processing to process the MedMorph Research Data Exchange Knowledge Artifact actions.
 
 * The HDEA **SHALL** schedule jobs to perform data extraction from EHRs at scheduled time intervals per the Knowledge Artifact.
 
