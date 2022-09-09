@@ -116,9 +116,9 @@ This section outlines how the SMART on FHIR Backend Services Authorization from 
 
 * The Data Source and the HDEA **SHOULD** pre-coordinate the group names and/or identifiers that can be used for retrieval of data.
 
-* The Data Source **SHALL** support the [Bulk Data Access Group export]({{ site.data.fhir.ver.bulkIg }}/export/index.html#endpoint---group-of-patients) operation to export the data required for the data mart population.
+* The Data Source **SHALL** support the [Bulk Data Access Group export]({{site.data.fhir.ver.bulkIg}}/export/index.html#endpoint---group-of-patients) operation to export the data required for the data mart population.
 
-* The Data Source **SHALL** support the [Group export operation parameters]({{ site.data.fhir.ver.bulkIg }}/OperationDefinition-group-export.html) for all Group export operations.
+* The Data Source **SHALL** support the [Group export operation parameters]({{site.data.fhir.ver.bulkIg}}/OperationDefinition-group-export.html) for all Group export operations.
  
 
 ###### Data API requirements
