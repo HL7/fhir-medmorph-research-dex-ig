@@ -7,21 +7,21 @@
 		by using emerging health data and exchange standards, such as Health Level 7 (HL7<sup>®</sup>) Fast Healthcare Interoperability Resources (FHIR<sup>®</sup>) and 
 	Clinical Quality Language (CQL), to develop and implement an interoperable solution that will enable access to clinical data. The MedMorph project 
 	fits within the Centers for Disease Control and Prevention (CDC) strategic imperative of transforming how data are collected, used, and shared 
-	through modern Information Technology (IT) capabilities to save lives and improve health. The MedMorph project is funded by the Health and 
+	through modern Information Technology (IT) capabilities to save lives and improve health. The initial phase of the MedMorph project was funded by the Health and 
 	Human Services (HHS) Assistant Secretary for Planning and Evaluation (ASPE) Patient-Centered Outcomes Research Trust Fund (PCORTF) and 
 	executed by the Center for Surveillance, Epidemiology, and Laboratory Services (CSELS) Public Health Informatics Office (PHIO) to 
 	advance research and public health goals.
     </p>
     <p>   
-    The project aims to leverage the maturation of standards and requirements for certification of health information technology by the Office of the 
-	National Coordinator for Health IT (ONC) that underpin many electronic health records (EHRs). Examples such as FHIR, the ONC 2015 Edition 
-	Common Clinical Data Set (CCDS), 2015 Edition Cures Update - United States Core Data for Interoperability (USCDI) Version 1, February 2020 and 
+    The project aims to leverage the maturation of standards and requirements for certification of health IT by the Office of the 
+	National Coordinator for Health IT (ONC) that underpin many electronic health records (EHRs). Examples such as FHIR<sup>®</sup>, the ONC 2015 Edition 
+	Common Clinical Data Set (CCDS), 2015 Edition Cures Update - United States Core Data for Interoperability (USCDI) Version 1, February 2020, and 
 	standardized application programming interfaces (API) for patient services have created a health IT environment that is ripe for developing 
 	standards-based scalable and extensible solutions to overcome interoperability challenges.
     </p>
     <p>
-    This MedMorph Research Data Exchange Content Implementation Guide (IG) will specify how the [MedMorph Reference Architecture (RA) IG]({{site.data.fhir.ver.medmorphIg}}/index.html) can be leveraged to
-    enable researcher data access for the <a href="usecases.html">Use Cases</a> outlined in the IG. 
+    This MedMorph Research Data Exchange Implementation Guide (IG) will specify how the [MedMorph Reference Architecture (RA) IG]({{site.data.fhir.ver.medmorphIg}}/index.html) can be leveraged to
+    enable data access for research purposes as documented in the <a href="usecases.html">Use Cases</a>. 
    </p>
 	<a name="technical"> </a>
 	<h3>Technical Overview</h3>
