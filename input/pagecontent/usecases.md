@@ -45,7 +45,7 @@ The current state is as shown in the Figure below:
 
 <br/>
 
-The usage of FHIR during the onboarding process and expected efficiencies are documented below:
+The usage of FHIR during the onboarding process and expected efficiencies are documented below in Figure 2.2.
 
 
 {% include img.html img="DataPartnerOnboardingFuture.png" caption="Figure 2.2 - Data Partner Onboarding Using FHIR" %}
@@ -65,9 +65,9 @@ The following actors from the [MedMorph RA IG]({{site.data.fhir.ver.medmorphIg}}
 
 ### Research Abstract Model for Onboarding a Data Partner to Populate a Data Mart
 
-Figure 2.3 below shows the research abstract model to onboard a data partner who can contribute data from their EHR system to populate a data mart.
+Figure 2.3 below shows the research abstract model to onboard a data partner who can contribute data from their data source (e.g., and EHR system) to populate a data mart.
 
-{% include img.html img="DataPartnerOnboarding.png" caption="Figure 2.3 - Populating a Data Mart from an EHR" %}
+{% include img.html img="DataPartnerOnboardingv2.png" caption="Figure 2.3 - Populating a Data Mart from an EHR" %}
 
 The description of the interactions as illustrated in Figure 2.3 include:
 * S1: The HDEA initiates the extraction process to get data from a Data Source for one or more patients.
@@ -78,7 +78,7 @@ The description of the interactions as illustrated in Figure 2.3 include:
 
 As an alternative to Figure 2.3, the Data Mart and the HDEA could reside outside the health care organization as shown in Figure 2.4 below. 
 
-{% include img.html img="OnboardingExternalDataPartner.png" caption="Figure 2.4 - Populating an Externally Hosted Data Mart from a Data Source" %}
+{% include img.html img="OnboardingExternalDataPartnerv2.png" caption="Figure 2.4 - Populating an Externally Hosted Data Mart from a Data Source" %}
 
 The description of the interactions as illustrated in Figure 2.4 include:
 * S1: The HDEA initiates the extraction process to get data from a Data Source for one or more patients.
