@@ -2,7 +2,7 @@
 The section identifies the business needs and specific user stories outlining the research data exchange needs.
 
 #### Business Need
-The purpose of the Making Electronic Data More Available for Research and Public Health (MedMorph) Research Data Exchange Implementation Guide (IG) is to streamline and expedite the process of onboarding research data partners and contributing data to research networks. The current processes used to extract, transform, and load (ETL) the data and then contribute the data involve many non-standardized mechanisms (e.g., Secure File Transfer Protocol (SFTP), Excel Files, stored procedures), different structures (e.g., formats), and different semantics. As a result of these non-standardized processes, the length of time to onboard a data partner varies from weeks to months. This MedMorph data exchange use case along with leveraging the MedMorph Reference Architecture (RA) IG with other existing Health Level 7 (HL7<sup>®</sup>) Fast Healthcare Interoperability Resources (FHIR<sup>®</sup>) IGs will help reduce the length of time it takes to onboard new data exchange partners. 
+The purpose of the Making Electronic Data More Available for Research and Public Health (MedMorph) Research Data Exchange Implementation Guide (IG) is to streamline and expedite the process of onboarding research data partners and contributing data to research networks. The current processes used to extract, transform, and load (ETL) the data and then contribute the data involve many non-standardized mechanisms (e.g., Secure File Transfer Protocol (SFTP), Excel Files, stored procedures), different structures (e.g., formats), and different semantics. As a result of these non-standardized processes, the length of time to onboard a data partner varies from weeks to months. This research data exchange use case along with leveraging the MedMorph Reference Architecture (RA) IG with other existing Health Level 7 (HL7<sup>®</sup>) Fast Healthcare Interoperability Resources (FHIR<sup>®</sup>) IGs will help reduce the length of time it takes to onboard new data exchange partners. 
 
 #### Goals of the Use Case
 The goals of the Research Data Exchange use case include:
@@ -53,21 +53,6 @@ The usage of FHIR during the onboarding process and expected efficiencies are do
 
 <br/>
 
-### Research Abstract Model for Onboarding a Data Partner to Populate a Data Mart
-
-Figure 2.3 below shows the research abstract model to onboard a data partner who can contribute data from their EHR system to populate a data mart.
-
-{% include img.html img="DataPartnerOnboarding.svg" caption="Figure 2.3 - Populating a Data Mart from an EHR" %}
-
-<br>
-
-As shown in Figure 2.3 above, the Health Data Exchange App (HDEA), MedMorph's backend services app, will extract data from a Data Source for one or more patients and use the Trust Services to perform translation, masking, and populating the data mart. In the above diagram the Data Mart exists within the health care organization. The Data Mart and the HDEA could reside outside the health care organization as shown in Figure 2.4 below. 
-
-{% include img.html img="OnboardingExternalDataPartner.svg" caption="Figure 2.4 - Populating an Externally Hosted Data Mart from a Data Source" %}
-
-<br>
-
-
 ### MedMorph Research Data Exchange Actors and Definitions
 
 The following actors from the [MedMorph RA IG]({{site.data.fhir.ver.medmorphIg}}/usecases.html#medmorph-actors-and-definitions) are used by the Research Data Exchange use case:
@@ -77,3 +62,28 @@ The following actors from the [MedMorph RA IG]({{site.data.fhir.ver.medmorphIg}}
 * HDEA
 * Trust Service Provider
 * Knowledge Artifact Repository
+
+### Research Abstract Model for Onboarding a Data Partner to Populate a Data Mart
+
+Figure 2.3 below shows the research abstract model to onboard a data partner who can contribute data from their EHR system to populate a data mart.
+
+{% include img.html img="DataPartnerOnboarding.png" caption="Figure 2.3 - Populating a Data Mart from an EHR" %}
+
+The description of the interactions as illustrated in Figure 2.3 include:
+* S1: The HDEA initiates the extraction process to get data from a Data Source for one or more patients.
+* S2: The HDEA uses the Trust Service Provider to transform the data if needed from one data model to another data model. This step may also involve de-identification, anonymization, or pseudonymization.
+* S3: The data is populated into the Data Mart.
+
+<br>
+
+As an alternative to Figure 2.3, the Data Mart and the HDEA could reside outside the health care organization as shown in Figure 2.4 below. 
+
+{% include img.html img="OnboardingExternalDataPartner.png" caption="Figure 2.4 - Populating an Externally Hosted Data Mart from a Data Source" %}
+
+The description of the interactions as illustrated in Figure 2.4 include:
+* S1: The HDEA initiates the extraction process to get data from a Data Source for one or more patients.
+* S2: The HDEA uses the Trust Service Provider to transform the data if needed from one data model to another data model. This step may also involve de-identification, anonymization, or pseudonymization.
+* S3: The data is populated into the Data Mart.
+
+<br>
+
