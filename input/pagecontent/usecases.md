@@ -67,7 +67,7 @@ The following actors from the [MedMorph RA IG]({{site.data.fhir.ver.medmorphIg}}
 
 Figure 2.3 below shows the research abstract model to onboard a data partner who can contribute data from their data source (e.g., and EHR system) to populate a data mart.
 
-{% include img.html img="DataPartnerOnboardingv2.png" caption="Figure 2.3 - Populating a Data Mart from an EHR" width="100" %}
+{% include img.html img="DataPartnerOnboardingv2.png" caption="Figure 2.3 - Populating a Data Mart from an EHR" width="100px" %}
 
 The description of the interactions as illustrated in Figure 2.3 include:
 * S1: The HDEA initiates the extraction process to get data from a Data Source for one or more patients.
@@ -78,7 +78,7 @@ The description of the interactions as illustrated in Figure 2.3 include:
 
 As an alternative to Figure 2.3, the Data Mart and the HDEA could reside outside the health care organization as shown in Figure 2.4 below. 
 
-{% include img.html img="OnboardingExternalDataPartnerv2.png" caption="Figure 2.4 - Populating an Externally Hosted Data Mart from a Data Source" width="100" %}
+{% include img.html img="OnboardingExternalDataPartnerv2.png" caption="Figure 2.4 - Populating an Externally Hosted Data Mart from a Data Source" width="100px" %}
 
 The description of the interactions as illustrated in Figure 2.4 include:
 * S1: The HDEA initiates the extraction process to get data from a Data Source for one or more patients.
